@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="portfolio-container">
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Service</a></li>
+        </ul>
+        <div class="left-container">
+            <div class="icons">
+                <a href="https://www.instagram.com/ushasri_tirumalasetty/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/usha-sri-tirumalasetty-14667315b/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/UshaSriT3"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/Ushasri574"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="content">
+                <p class="intro">Hello! I'm <span>Usha Sri Tirumalasetty</span></p>
+                <h1>Software Engineer</h1>
+                <p class="detail">As a Full Stack Developer with 3.5 years of experience, I specialize in Python,
+                    JavaScript, and Java. I build robust web applications using Node.js, Django, and Flask for the
+                    backend, and AngularJS and React for the frontend. I am proficient in MVC architecture for clean,
+                    maintainable code.I published a paper on "Mobile Agent Based Patient Monitoring System" in IRJET. My
+                    achievements include developing OpenCV image processing algorithms for defect detection in
+                    manufacturing and creating a TensorFlow-based real-time object detection system with 95% accuracy,
+                    reducing manual inspection time by 20%. I excel in secure authentication with JWT tokens and
+                    integrating AWS services like S3 and SNS for scalable solutions.I hold a Master’s degree in Computer
+                    Science from Pace University.
+                </p>
+                <div class="btn-container">
+                    <button id="hire-me">Hire Me</button>
+                    <div class="social-icons" id="social-icons">
+                        <ul>
+                            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ushasri.tirumalasetty3@gmail.com&su=Connection%20from%20Portfolio"
+                                    target="_blank"><i class="fa-regular fa-envelope social-icon-img"></i> Mail</a></li>
+                            <li><a href="tel:8483169452"><i
+                                        class="fa-solid fa-phone-volume social-icon-img"></i>Phone</a></li>
+                            <li><a href="https://wa.me/18483169452" target="_blank"><i
+                                        class="fa-brands fa-whatsapp social-icon-img"></i>Whatsapp</a></li>
+                        </ul>
+                    </div>
+                    <button>View Project</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-container"></div>
+        <div class="design">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('hire-me').addEventListener('click', function () {
+            var socialIcons = document.getElementById('social-icons');
+            if (socialIcons.style.display === 'none' || socialIcons.style.display === '') {
+                socialIcons.style.display = 'block';
+            } else {
+                socialIcons.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
